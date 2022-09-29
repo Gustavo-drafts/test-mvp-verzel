@@ -1,0 +1,21 @@
+// Configurações de transformação da tabela MySql(PlanetScale) para Obj
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["referentialIntegrity"]
+}
+
+datasource db {
+  provider             = "mysql"
+  url                  = env("DATABASE_URL")
+  shadowDatabaseUrl    = env("SHADOW_DATABASE_URL") // 'shadowDatabaseUrl' -> executar servidor localmente
+  referentialIntegrity = "prisma"
+}
+
+// Modelo de tabela do Banco
+model vehicle {
+  id       Int    @id @default(autoincrement())
+  name     String
+  brand    String
+  model    String
+  imageUrl String
+}
