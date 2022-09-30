@@ -1,7 +1,7 @@
 import { signIn, useSession } from "next-auth/react";
 
 
-export function Login<Props>() {
+export default function Login<Props>(props) {
   const { data: session } = useSession()
 
   function handlerSignIn() {

@@ -1,6 +1,6 @@
 import { GetServerSideProps, InferGetServerSidePropsType } from "next";
 import { getSession } from "next-auth/react";
-import { Login } from "./Login";
+import Login from "./Login";
 
 
 export const getServerSideProps: GetServerSideProps = async ({ req }) => {
@@ -21,7 +21,7 @@ export const getServerSideProps: GetServerSideProps = async ({ req }) => {
 
 
 export default function Home(props: InferGetServerSidePropsType<typeof getServerSideProps>) {
-  
+
   return (
     <>
       <Login />
