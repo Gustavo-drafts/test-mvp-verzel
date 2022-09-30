@@ -1,18 +1,32 @@
 
-# <center><strong>Mvp-Verzerl-CarShop</strong></center>
+# <center><strong>Mvp-Verzel-CarShop</strong></center>
 
 ## --techs:
 
-React NextJS
-TailwindCSS
-Next-Auth Github-JWT
+<ul>
+ <li>React NextJS</li>
+ <li>TailwindCSS </li>
+ <li>Next-Auth Github-JWT </li>
+ <li>Prisma </li>
+</ul>
 
-- Rode aplicação com 
+Start the app in steps:
 
-
+#
+- Install dependencies:
+```bash
+npm install
+or
+yarn
+```
+#
+- Run app with:
 
 ```bash
 npm run dev 
-ou 
+or
 yarn dev
 ```
+
+Special attention to <b>.env<b> in case of authentication error:
+https://docs.github.com/en/actions/learn-github-actions/environment-variables

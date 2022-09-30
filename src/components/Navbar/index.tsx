@@ -1,9 +1,9 @@
 import Image from "next/image";
-import Logo from '../../../../assets/logo.png';
+import Logo from '../../assets/logo.png';
 
 export function Navbar() {
   return (
-    <div className="p-8 bg-white flex container-xl h-20 justify-between items-center">
+    <div className="p-8 bg-gray200 flex container-xl h-20 justify-between items-center">
       <div className='flex-none w-28 h-7'>
         <Image src={Logo} />
       </div>
