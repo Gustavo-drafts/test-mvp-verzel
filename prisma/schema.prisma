@@ -8,11 +8,9 @@ datasource db {
 }
 
 model Vehicles {
-  id     String @id @default(uuid())
+  id     Int @id @default(autoincrement()) @unique
   name   String
   brand  String
   type   String
   imgUrl String
-
-  @@map("vehicles")
 }
