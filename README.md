@@ -1,5 +1,5 @@
 
-# <center><strong>Mvp-Verzel-CarShop</strong></center>
+# <center> Mvp-Verzel-CarShop </center>
 
 ## --techs:
 
