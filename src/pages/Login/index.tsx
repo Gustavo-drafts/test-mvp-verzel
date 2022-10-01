@@ -1,9 +1,7 @@
-import { signIn, useSession } from "next-auth/react";
+import { signIn } from "next-auth/react";
 
 
 export default function Login<Props>(props) {
-  const { data: session } = useSession()
-
   function handlerSignIn() {
     signIn('https://github.com/login/oauth/authorize')
   }

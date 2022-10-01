@@ -7,7 +7,8 @@
  <li>React NextJS</li>
  <li>TailwindCSS </li>
  <li>Next-Auth Github-JWT </li>
- <li>Prisma </li>
+ <li>Prisma</li>
+ <li>SQLite</li>
 </ul>
 
 Start the app in steps:
